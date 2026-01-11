@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Tigrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jogo do Tigrinho</h1>
+        <div class="slot-machine">
+            <div class="reel" id="reel1"></div>
+            <div class="reel" id="reel2"></div>
+            <div class="reel" id="reel3"></div>
+        </div>
+        <button id="spin-button">Girar</button>
+        <p>Saldo: <span id="balance">100</span></p>
+        <p id="message">Boa sorte!</p>
+    </div>
+
+    <!-- Sons do Jogo (escondidos, controlados via JS) -->
+    <audio id="spin-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_b83c30c889.mp3?filename=slot-machine-sound-1-192858.mp3" preload="auto"></audio>
+    <audio id="win-sound" src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_c23a9c54a2.mp3?filename=casino-win-1-192859.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
